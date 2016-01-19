@@ -920,14 +920,14 @@ public class Level implements ImageObserver, Serializable {
         }
 
         if (flag) {
-            System.out.println("Playing sound " + soundname);
+            //System.out.println("Playing sound " + soundname);
             SoundClip soundClip = sounds.get(soundname);
             if (soundClip != null && soundClip.audioClip != null) {
                 soundClip.audioClip.play();
-            } else {
-            	System.out.println("Can't play " + soundname);
-            }
-            System.out.println("Done");
+            }// else {
+            	//System.out.println("Can't play " + soundname);
+            //}
+            //System.out.println("Done");
         }
     }
 
